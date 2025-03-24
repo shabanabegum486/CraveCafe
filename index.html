@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crave</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS (for modal functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts for Stylish Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Poppins:wght@600&family=Raleway:wght@800&display=swap"
+        rel="stylesheet">
+    <style>
+        .hero-text {
+            animation: fadeInDown 2s ease-in-out;
+        }
+
+        .highlight-text {
+            animation: pulse 1.5s infinite;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #343a40 !important;
+        }
+
+        .navbar-brand {
+            color: #f8f9fa !important;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar-nav .nav-link {
+            color: #f8f9fa !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffd700 !important;
+        }
+
+
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Crave</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" id="offcanvasNavbar" tabindex="-1"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#specials">Specials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="container text-center mt-5">
+        <h1 class="display-1 fw-bold hero-text">Welcome to Crave</h1>
+        <p class="lead text-muted animate__animated animate__fadeIn font-"><mark><em>Savor the taste of
+                    perfection.</em></mark>
+        </p>
+    </div>
+
+    <!-- Hero Section with Carousel -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2400">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="pizza.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Delicious Food</h5>
+                    <p>Experience the best dishes ever made.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="burger.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Fresh Ingredients</h5>
+                    <p>We use the freshest ingredients for every meal.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="salad.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Great Atmosphere</h5>
+                    <p>Enjoy your meal in a cozy environment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Menu Section -->
+    <div class="container mt-5">
+        <h2 class="display-4 text-uppercase fw-bold text-center animate__animated animate__fadeInUp">Our Menu</h2>
+        <ul class="list-group mt-4">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Pizza <span class="badge bg-primary">$12.99</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Burger <span class="badge bg-primary">$8.99</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Salad <span class="badge bg-primary">$6.99</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Special Offers -->
+    <div class="container mt-5">
+        <h2 class="text-uppercase text-center fw-bold text-success highlight-text">Today's Specials</h2>
+        <div class="alert alert-warning text-center animate__animated animate__bounce">
+            <strong>Limited Time Offer!</strong> 20% off on all pizzas!
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p class="lead">&copy; 2025 Crave. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
